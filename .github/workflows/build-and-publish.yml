@@ -2,23 +2,22 @@
 
 name: Publish package to Github
 
-# Controls when the action will run.
 on:
   workflow_dispatch:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [main]
 
 concurrency:
   group: ${{ github.ref }}
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   github-release:
     runs-on: ubuntu-latest
     steps:
     #Generates github release notes once release-pr is merged
+    #Skips this job when this action runs the first time, needs the 
+    #'release-pr' action to pass to make the pr.
+    # once merged, this section generates the github release notes.
      - uses: google-github-actions/release-please-action@v3
        id: release
        with:
@@ -60,6 +59,11 @@ jobs:
          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        run: npm publish
 
+#generates a release pr that needs to get merged.
+#after this has run once, the second time this 
+#runs (when the release pr gets merged) this doesn't 
+#create an additional pr, on merge, 'github-release'
+#will be pass and create the deployment and release notes
   release-pr:
       runs-on: ubuntu-latest
       needs:
