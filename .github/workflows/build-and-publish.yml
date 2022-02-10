@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [master]
+    branches: [main]
 
 concurrency:
   group: ${{ github.ref }}
@@ -24,6 +24,8 @@ jobs:
          release-type: node
          package-name: ${{ github.event.repository.name }}
          token: ${{ secrets.GITHUB_TOKEN }}
+         default-branch: main
+       
      - uses: actions/checkout@v2.3.4
        if: ${{ steps.release.outputs.release_created }}
      - uses: actions/setup-node@v2.5.1
@@ -38,7 +40,6 @@ jobs:
          org_name: fullfacing
        env:
          AUTH_TOKEN: ${{ secrets.ACTIONS_PAT }}
-     # Runs a set of commands using the runners shell
      
      - name: Install dependencies
        if: ${{ steps.release.outputs.release_created }}
