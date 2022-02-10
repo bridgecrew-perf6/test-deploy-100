@@ -36,8 +36,8 @@ jobs:
          node-version: 14
      
      - name: Generate .npmrc for Private Repo
-       if: ${{ steps.release.outputs.release_created }}
        uses: TwiggyBuffalo/create-npmrc@master
+       if: ${{ steps.release.outputs.release_created }}
        with:
          org_name: fullfacing
        env:
@@ -58,8 +58,7 @@ jobs:
        if: ${{ steps.tag-release.outputs.releases_created }}
        env:
          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       run: |
-         npm publish
+       run: npm publish
 
   release-pr:
       runs-on: ubuntu-latest
