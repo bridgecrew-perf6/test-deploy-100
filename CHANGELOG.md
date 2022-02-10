@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/jpbnetley/test-deploy/compare/v1.0.1...v1.1.0) (2022-02-10)
+
+
+### Features
+
+* added f2 function ([1318c68](https://github.com/jpbnetley/test-deploy/commit/1318c68e7a4160acac0b78f3e77243190459c181))
+
+
+### Bug Fixes
+
+* build for npm rc if ([64355d3](https://github.com/jpbnetley/test-deploy/commit/64355d35f2f2687e2992c0b35b7a2fba03fb4601))
+
 ### [1.0.1](https://github.com/jpbnetley/test-deploy/compare/v1.0.0...v1.0.1) (2022-02-10)
 
 
