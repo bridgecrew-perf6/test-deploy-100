@@ -1,6 +1,6 @@
 {
   "name": "test-deploy",
-  "version": "0.0.0-dev",
+  "version": "1.0.0",
   "description": "test build",
   "main": "src/index.js",
   "scripts": {
