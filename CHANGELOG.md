@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/jpbnetley/test-deploy/compare/v1.1.0...v1.2.0) (2022-02-10)
+
+
+### Features
+
+* added f3 ([86d1cbd](https://github.com/jpbnetley/test-deploy/commit/86d1cbdcb88d264be86c8e05ab9d1730e373894f))
+
+
+### Bug Fixes
+
+* package build returns code ([5cfd961](https://github.com/jpbnetley/test-deploy/commit/5cfd96158d41866e654f66d35d52bb9d7a254f00))
+* package build returns code ([a41590a](https://github.com/jpbnetley/test-deploy/commit/a41590a3765071436154e9fc826196364918e386))
+* test1 test2 export ([29bf48b](https://github.com/jpbnetley/test-deploy/commit/29bf48bc54defb4eaaad51596ce214233c5cf149))
+
 ## [1.1.0](https://github.com/jpbnetley/test-deploy/compare/v1.0.1...v1.1.0) (2022-02-10)
 
 
