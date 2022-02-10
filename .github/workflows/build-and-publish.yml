@@ -27,8 +27,9 @@ jobs:
          token: ${{ secrets.GITHUB_TOKEN }}
          
      - name: log release status
-       run: echo ${{ steps.release.outputs.release_created }}
-       shell: bash
+       run: echo "release status - $release_status"
+       env:
+         release_status: ${{ steps.release.outputs.release_created }}
        
      - uses: actions/checkout@v2.3.4
        if: ${{ steps.release.outputs.release_created }}
