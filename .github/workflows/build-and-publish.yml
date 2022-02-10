@@ -25,6 +25,11 @@ jobs:
          package-name: ${{ github.event.repository.name }}
          command: github-release
          token: ${{ secrets.GITHUB_TOKEN }}
+         
+     - name: log release status
+       run: echo ${{ steps.release.outputs.release_created }}
+       shell: bash
+       
      - uses: actions/checkout@v2.3.4
        if: ${{ steps.release.outputs.release_created }}
      - uses: actions/setup-node@v2.5.1
