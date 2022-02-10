@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://github.com/jpbnetley/test-deploy/compare/v1.0.0...v1.0.1) (2022-02-10)
+
+
+### Bug Fixes
+
+* build with better names ([d93eaf6](https://github.com/jpbnetley/test-deploy/commit/d93eaf69289026bae7c0815fe5c3380d22c0a904))
+
 ## 1.0.0 (2022-02-10)
 
 
