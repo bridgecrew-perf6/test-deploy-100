@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create release
-          id: release
           uses: google-github-actions/release-please-action@v3
+          id: release
           with:
             release-type: node
             package-name: ${{ github.event.repository.name }}
