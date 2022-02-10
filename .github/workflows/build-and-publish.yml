@@ -25,6 +25,7 @@ jobs:
          package-name: ${{ github.event.repository.name }}
          command: github-release
          token: ${{ secrets.GITHUB_TOKEN }}
+         default-branch: main
          
      - name: log release status
        run: echo "release status - $release_status"
