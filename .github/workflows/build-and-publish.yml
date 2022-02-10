@@ -77,6 +77,6 @@ jobs:
           with:
               release-type: node
               package-name: ${{ github.event.repository.name }}
-              command: github-release
+              command: release-pr
               token: ${{ secrets.GITHUB_TOKEN }}
               default-branch: main
