@@ -23,9 +23,7 @@ jobs:
        with:
          release-type: node
          package-name: ${{ github.event.repository.name }}
-         command: github-release
          token: ${{ secrets.GITHUB_TOKEN }}
-    run: echo \"created release:  ${{ steps.release.outputs.release_created }} \""
      - uses: actions/checkout@v2.3.4
        if: ${{ steps.release.outputs.release_created }}
      - uses: actions/setup-node@v2.5.1
