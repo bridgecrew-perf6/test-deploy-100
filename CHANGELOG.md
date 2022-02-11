@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://github.com/jpbnetley/test-deploy/compare/v1.2.0...v1.2.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* fixed test1 ([fc99346](https://github.com/jpbnetley/test-deploy/commit/fc993467252ee31ce3a98df156a73da38a0a46f8))
+
 ## [1.2.0](https://github.com/jpbnetley/test-deploy/compare/v1.1.0...v1.2.0) (2022-02-10)
 
 
