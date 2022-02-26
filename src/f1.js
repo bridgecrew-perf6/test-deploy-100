@@ -1,4 +1,6 @@
-// this is a doc
+/**
+ * This function logs out testing
+ */
 const test1 = () => {
   console.log('testing')
 }
