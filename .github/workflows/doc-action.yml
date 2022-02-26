@@ -9,14 +9,13 @@ concurrency:
   group: ${{ github.ref }}
 
 jobs:
-  github-release:
+  generate-docs:
     runs-on: ubuntu-latest
     steps:
-
-  - name: JSDoc Action
-    uses: andstor/jsdoc-action@v1.2.1
-    with:
-    source_dir: ./src
-    recurse: true
-    output_dir: ./out
+     - name: JSDoc Action
+       uses: andstor/jsdoc-action@v1.2.1
+       with:
+        source_dir: ./src
+        recurse: true
+        output_dir: ./out
 
