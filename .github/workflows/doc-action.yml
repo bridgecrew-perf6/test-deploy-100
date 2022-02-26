@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 concurrency:
-  group: ${{ github.ref }}
+  group: ${{ github.ref }}-docs
 
 jobs:
   generate-docs:
@@ -20,7 +20,7 @@ jobs:
         with:
           source_dir: ./src
           output_dir: ./out
-          config_file: conf.json
+          config_file: config.json
           template: minami
           front_page: README.md
 
