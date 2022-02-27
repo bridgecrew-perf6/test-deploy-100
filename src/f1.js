@@ -6,4 +6,3 @@ const test1 = () => {
 }
 
 export default test1
-//mos
