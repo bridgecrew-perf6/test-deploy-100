@@ -5,4 +5,4 @@
 - [release-please action](https://github.com/google-github-actions/release-please-action)
 - [jsdoc action](https://github.com/andstor/jsdoc-action)
 
-example repo with jsDocs action: https://github.com/chinmay-kothari/DocsExample
+example repo with [jsDocs action](https://github.com/chinmay-kothari/DocsExample)
