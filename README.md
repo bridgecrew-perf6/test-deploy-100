@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://jpbnetley.github.io/test-deploy/)
+
 # test-deploy
 > The goal of this repo is to test deployments
 
